@@ -8,6 +8,7 @@
     Title="Borders">
     <ContentPage.Content>
         <StackLayout
+            
             BindingContext="{Binding Land}"
             Padding="15">
             <Label
