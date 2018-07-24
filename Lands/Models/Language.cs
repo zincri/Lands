@@ -15,7 +15,6 @@ namespace Lands.Models
         [JsonProperty(PropertyName = "nativeName")]
         public string NativeName { get; set; }
         #endregion
-
         public Language()
         {
         }
