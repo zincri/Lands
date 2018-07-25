@@ -13,6 +13,7 @@ namespace Lands.ViewModels
             get;
             set;
         }
+
         public TokenResponse Token
         {
             get;
