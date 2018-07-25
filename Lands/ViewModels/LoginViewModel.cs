@@ -2,12 +2,16 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using Lands.Services;
 using GalaSoft.MvvmLight.Command;
 
 namespace Lands.ViewModels
 {
     public class LoginViewModel :INotifyPropertyChanged
     {
+        #region Services
+        private ApiService apiService;
+        #endregion
         private string _email;
         private string _password;
         private bool _isRunning;
@@ -80,9 +84,12 @@ namespace Lands.ViewModels
         #region Constructors
         public LoginViewModel()
         {
+            this.apiService = new ApiService();
             IsEnable = true;
-            Email = "zincri@hotmail.com";
-            Password = "1234";
+
+            Email = "zincri_mlz@hotmail.com";
+            Password = "123456";
+
             IsRemembered = true;
             IsRunning = false;
 
@@ -129,24 +136,58 @@ namespace Lands.ViewModels
                 return;
             }
 
-            if (Email != "zincri@hotmail.com" || Password != "1234")
+
+            var conection = await this.apiService.CheckConnection();
+            if (!conection.IsSuccess)
             {
-                await App.Current.MainPage.DisplayAlert(
-                "Error Message",
-                "Email or password incorrect",
-                "Ok");
-                this.Password = string.Empty;
+                
                 IsRunning = false;
                 IsEnable = true;
+                await App.Current.MainPage.DisplayAlert(
+                "Error Message",
+                    conection.Message,
+                "Ok");
+                this.Password = string.Empty;
                 return;
             }
+            var token = await this.apiService.GetToken(
+                "http://landsapi1.azurewebsites.net",
+                this.Email,
+                this.Password);
+            
+            if( token==null)
+            {
+                IsRunning = false;
+                IsEnable = true;
+                await App.Current.MainPage.DisplayAlert(
+                "Error Message",
+                "Something was wrong, please try later.",
+                "Ok");
+                this.Password = string.Empty;
+                return;
+                
+            }
+            if(string.IsNullOrEmpty(token.AccessToken))
+            {
+                IsRunning = false;
+                IsEnable = true;
+                await App.Current.MainPage.DisplayAlert(
+                "Error Message",
+                    token.ErrorDescription,
+                "Ok");
+                this.Password = string.Empty;
+                return;
+            }
+
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.Token = token;
+
+            mainViewModel.Lands = new LandsViewModel();
+            await App.Current.MainPage.Navigation.PushAsync(new Views.LandsPage());
+
             IsRunning = false;
             IsEnable = true;
-            //Email = string.Empty;
             Password = string.Empty;
-
-            MainViewModel.GetInstance().Lands = new LandsViewModel();
-            await App.Current.MainPage.Navigation.PushAsync(new Views.LandsPage());
 
         }
 
@@ -158,8 +199,5 @@ namespace Lands.ViewModels
             }
         }
         #endregion
-
-
-
     }
 }

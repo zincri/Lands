@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Lands.Models;
 
 namespace Lands.ViewModels
 {
@@ -8,6 +9,11 @@ namespace Lands.ViewModels
 
         #region Properties
         public List<Models.Land> LandsList
+        {
+            get;
+            set;
+        }
+        public TokenResponse Token
         {
             get;
             set;
