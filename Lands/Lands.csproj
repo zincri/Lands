@@ -157,6 +157,9 @@
     <Reference Include="FFImageLoading.Svg.Forms">
       <HintPath>..\packages\Xamarin.FFImageLoading.Svg.Forms.2.4.3.840\lib\portable-win+net45+wp80+win81+wpa81\FFImageLoading.Svg.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="FFImageLoading.Transformations">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.3.840\lib\portable-win+net45+wp80+win81+wpa81\FFImageLoading.Transformations.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

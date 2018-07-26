@@ -17,6 +17,7 @@
                 CornerRadius="20">
             <SearchBar
                 TextColor="Black"
+
                 BackgroundColor="Transparent"
                 Text="{Binding Filter,Mode=TwoWay}"
                 Placeholder="Search..."

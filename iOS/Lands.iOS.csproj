@@ -124,6 +124,9 @@
     <Reference Include="FFImageLoading.Svg.Forms">
       <HintPath>..\packages\Xamarin.FFImageLoading.Svg.Forms.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Svg.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="FFImageLoading.Transformations">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Transformations.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lands\Lands.csproj">
