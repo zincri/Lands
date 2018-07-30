@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Lands.Services;
 using GalaSoft.MvvmLight.Command;
+using Lands.Helpers;
 
 namespace Lands.ViewModels
 {
@@ -116,9 +117,9 @@ namespace Lands.ViewModels
             if (string.IsNullOrEmpty(this.Email))
             {
                 await App.Current.MainPage.DisplayAlert(
-                "Error Message",
-                "the email is null or empty",
-                "Ok");
+                Languages.Error,
+                Languages.EmailValidation,
+                Languages.Ok);
                 this.Password = string.Empty;
                 IsRunning = false;
                 IsEnable = true;
@@ -127,9 +128,9 @@ namespace Lands.ViewModels
             if (string.IsNullOrEmpty(this.Password))
             {
                 await App.Current.MainPage.DisplayAlert(
-                "Error Message",
-                "the password is null or empty",
-                "Ok");
+                Languages.Error,
+                Languages.PasswordValidation,
+                Languages.Ok);
                 this.Password = string.Empty;
                 IsRunning = false;
                 IsEnable = true;
@@ -144,9 +145,9 @@ namespace Lands.ViewModels
                 IsRunning = false;
                 IsEnable = true;
                 await App.Current.MainPage.DisplayAlert(
-                "Error Message",
+                Languages.Error,
                     conection.Message,
-                "Ok");
+                Languages.Ok);
                 this.Password = string.Empty;
                 return;
             }
@@ -160,9 +161,9 @@ namespace Lands.ViewModels
                 IsRunning = false;
                 IsEnable = true;
                 await App.Current.MainPage.DisplayAlert(
-                "Error Message",
-                "Something was wrong, please try later.",
-                "Ok");
+                Languages.Error,
+                Languages.SomethingWrong,
+                Languages.Ok);
                 this.Password = string.Empty;
                 return;
                 
@@ -172,9 +173,9 @@ namespace Lands.ViewModels
                 IsRunning = false;
                 IsEnable = true;
                 await App.Current.MainPage.DisplayAlert(
-                "Error Message",
+                Languages.Error,
                     token.ErrorDescription,
-                "Ok");
+                Languages.Ok);
                 this.Password = string.Empty;
                 return;
             }
