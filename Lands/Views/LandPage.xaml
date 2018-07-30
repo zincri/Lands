@@ -84,7 +84,7 @@
                     <Label
                         Grid.Column="0"
                         Grid.Row="3"
-                        Text="AlphaCode2:"
+                        Text="Alpha Code 2:"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -97,7 +97,7 @@
                     <Label
                         Grid.Column="0"
                         Grid.Row="4"
-                        Text="AlphaCode3:"
+                        Text="Alpha Code 3:"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -162,7 +162,7 @@
                     <Label
                         Grid.Column="0"
                         Grid.Row="9"
-                        Text="NativeName:"
+                        Text="Native Name:"
                         TextColor="Black">
                     </Label>
                     <Label
@@ -175,7 +175,7 @@
                     <Label
                         Grid.Column="0"
                         Grid.Row="10"
-                        Text="NumericCode:"
+                        Text="Numeric Code:"
                         TextColor="Black">
                     </Label>
                     <Label
