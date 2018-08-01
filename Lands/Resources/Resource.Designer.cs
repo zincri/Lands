@@ -62,7 +62,7 @@ namespace Lands.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Enter your email....
+        ///   Busca una cadena traducida similar a example@hotmail.com.
         /// </summary>
         public static string EmailPlaceHolder {
             get {
@@ -89,6 +89,24 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Forgot your password?.
+        /// </summary>
+        public static string ForgotPassword {
+            get {
+                return ResourceManager.GetString("ForgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ok.
         /// </summary>
         public static string Ok {
@@ -98,11 +116,29 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a password.
+        /// </summary>
+        public static string PasswordPlaceHolder {
+            get {
+                return ResourceManager.GetString("PasswordPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a The password is null or empty.
         /// </summary>
         public static string PasswordValidation {
             get {
                 return ResourceManager.GetString("PasswordValidation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Register.
+        /// </summary>
+        public static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
             }
         }
         

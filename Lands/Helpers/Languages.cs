@@ -52,6 +52,26 @@ namespace Lands.Helpers
         {
             get { return Resource.Error; }
         }
+        
+        public static string PasswordPlaceHolder
+        {
+            get { return Resource.PasswordPlaceHolder; }
+        }
+        
+        public static string ForgotPassword
+        {
+            get { return Resource.ForgotPassword; }
+        }
+
+        public static string Login
+        {
+            get { return Resource.Login; }
+        }
+
+        public static string Register
+        {
+            get { return Resource.Register; }
+        }
         /*
         public static string EmailPlaceHolder
         {

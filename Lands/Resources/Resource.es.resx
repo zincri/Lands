@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="EmailPlaceHolder" xml:space="preserve">
-    <value>Ingresa tu email...</value>
+    <value>ejemplo@hotmail.com</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
     <value>El e-mail es nulo o esta vacio.</value>
@@ -126,11 +126,23 @@
   <data name="Error" xml:space="preserve">
     <value>Mensaje de Error</value>
   </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Olvidaste tu contraseña?</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
   <data name="Ok" xml:space="preserve">
     <value>Aceptar</value>
   </data>
+  <data name="PasswordPlaceHolder" xml:space="preserve">
+    <value>contraseña</value>
+  </data>
   <data name="PasswordValidation" xml:space="preserve">
     <value>La contraseña es nula o vacia.</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrarse</value>
   </data>
   <data name="Rememberme" xml:space="preserve">
     <value>Recordar</value>

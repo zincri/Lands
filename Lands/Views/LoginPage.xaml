@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:i18n="clr-namespace:XFML;assembly=XFML"
+             xmlns:i18n="clr-namespace:Lands.Helpers"
              x:Class="Lands.Views.LoginPage"
              BindingContext= "{Binding Main, Source={StaticResource Locator}}"
              Title="Login"
@@ -35,7 +35,7 @@
                         BackgroundColor="Transparent"
                         Keyboard="Email"
                         TextColor="White"
-                        Placeholder="example@hotmail.com"
+                        Placeholder="{i18n:Translate EmailPlaceHolder}"
                         Text="{Binding Email, Mode=TwoWay}"
                         VerticalOptions="Center"></Entry>
                     </Frame>
@@ -55,7 +55,7 @@
                         BackgroundColor="Transparent"
                         IsPassword="true"
                         TextColor="White"
-                        Placeholder="Enter your password"
+                        Placeholder="{i18n:Translate PasswordPlaceHolder}"
                         Text="{Binding Password, Mode=TwoWay}"
                         VerticalOptions="Center"></Entry>
                     </Frame>
@@ -78,14 +78,14 @@
                     <Label
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
-                        Text="Rememberme:"
+                        Text="{i18n:Translate Rememberme}"
                         TextColor="White"/>
                     
                     
                 </StackLayout>
                 <Label
                     HorizontalOptions="Center"
-                    Text="Forgot your password?"
+                    Text="{i18n:Translate ForgotPassword}"
                     TextColor="White"
                     VerticalOptions="CenterAndExpand"/>
 
@@ -101,7 +101,7 @@
                         HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
                         IsEnabled="{Binding IsEnable}"
-                        Text="Login"
+                        Text="{i18n:Translate Login}"
                         TextColor="White"></Button>
                     <Button
                         
@@ -109,7 +109,7 @@
                         BorderRadius="20"
                         HeightRequest="40"
                         HorizontalOptions="FillAndExpand"
-                        Text="Register"
+                        Text="{i18n:Translate Register}"
                         TextColor="White"></Button>
                 </StackLayout>
                 <StackLayout
