@@ -67,65 +67,20 @@ namespace Lands.Helpers
         {
             get { return Resource.Login; }
         }
-
-        public static string Register
+        
+        public static string LoginTitle
         {
-            get { return Resource.Register; }
-        }
-        /*
-        public static string EmailPlaceHolder
-        {
-            get { return Resource.EmailPlaceHolder; }
+            get { return Resource.LoginTitle; }
         }
 
-        public static string Rememberme
+        public static string LandsTitle
         {
-            get { return Resource.Rememberme; }
+            get { return Resource.LandsTitle; }
         }
 
-        public static string PasswordValidation
+        public static string LandTitle
         {
-            get { return Resource.PasswordValidation; }
-        }
-
-        public static string SomethingWrong
-        {
-            get { return Resource.SomethingWrong; }
-        }
-
-        public static string Login
-        {
-            get { return Resource.Login; }
-        }
-
-        public static string EMail
-        {
-            get { return Resource.EMail; }
-        }
-
-        public static string Password
-        {
-            get { return Resource.Password; }
-        }
-
-        public static string PasswordPlaceHolder
-        {
-            get { return Resource.PasswordPlaceHolder; }
-        }
-
-        public static string Forgot
-        {
-            get { return Resource.Forgot; }
-        }
-
-        public static string Register
-        {
-            get { return Resource.Register; }
-        }
-
-        public static string Countries
-        {
-            get { return Resource.Countries; }
+            get { return Resource.LandTitle; }
         }
 
         public static string Search
@@ -133,9 +88,9 @@ namespace Lands.Helpers
             get { return Resource.Search; }
         }
 
-        public static string Country
+        public static string Register
         {
-            get { return Resource.Country; }
+            get { return Resource.Register; }
         }
 
         public static string Information
@@ -143,6 +98,7 @@ namespace Lands.Helpers
             get { return Resource.Information; }
         }
 
+        //*************************************************************
         public static string Capital
         {
             get { return Resource.Capital; }
@@ -202,6 +158,7 @@ namespace Lands.Helpers
         {
             get { return Resource.CIOC; }
         }
+        //*************************************************************
 
         public static string Borders
         {
@@ -216,6 +173,14 @@ namespace Lands.Helpers
         public static string MyLanguages
         {
             get { return Resource.MyLanguages; }
-        }*/
+        }
+        
+
+        public static string Translations
+        {
+            get { return Resource.Translations; }
+        }
+
+       
     }
 }

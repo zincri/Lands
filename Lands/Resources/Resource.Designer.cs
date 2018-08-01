@@ -62,6 +62,78 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Alpha Code 2:.
+        /// </summary>
+        public static string AlphaCode2 {
+            get {
+                return ResourceManager.GetString("AlphaCode2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Alpha Code 3:.
+        /// </summary>
+        public static string AlphaCode3 {
+            get {
+                return ResourceManager.GetString("AlphaCode3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Área:.
+        /// </summary>
+        public static string Area {
+            get {
+                return ResourceManager.GetString("Area", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Borders.
+        /// </summary>
+        public static string Borders {
+            get {
+                return ResourceManager.GetString("Borders", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Capital:.
+        /// </summary>
+        public static string Capital {
+            get {
+                return ResourceManager.GetString("Capital", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CIOC:.
+        /// </summary>
+        public static string CIOC {
+            get {
+                return ResourceManager.GetString("CIOC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Currencies.
+        /// </summary>
+        public static string Currencies {
+            get {
+                return ResourceManager.GetString("Currencies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Demonym:.
+        /// </summary>
+        public static string Demonym {
+            get {
+                return ResourceManager.GetString("Demonym", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a example@hotmail.com.
         /// </summary>
         public static string EmailPlaceHolder {
@@ -98,11 +170,83 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a GINI:.
+        /// </summary>
+        public static string GINI {
+            get {
+                return ResourceManager.GetString("GINI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Information.
+        /// </summary>
+        public static string Information {
+            get {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Countries.
+        /// </summary>
+        public static string LandsTitle {
+            get {
+                return ResourceManager.GetString("LandsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Country.
+        /// </summary>
+        public static string LandTitle {
+            get {
+                return ResourceManager.GetString("LandTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Login.
         /// </summary>
         public static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Login.
+        /// </summary>
+        public static string LoginTitle {
+            get {
+                return ResourceManager.GetString("LoginTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Languages.
+        /// </summary>
+        public static string MyLanguages {
+            get {
+                return ResourceManager.GetString("MyLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Native Name:.
+        /// </summary>
+        public static string NativeName {
+            get {
+                return ResourceManager.GetString("NativeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Numeric Code:.
+        /// </summary>
+        public static string NumericCode {
+            get {
+                return ResourceManager.GetString("NumericCode", resourceCulture);
             }
         }
         
@@ -134,6 +278,24 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Population:.
+        /// </summary>
+        public static string Population {
+            get {
+                return ResourceManager.GetString("Population", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Region:.
+        /// </summary>
+        public static string Region {
+            get {
+                return ResourceManager.GetString("Region", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Register.
         /// </summary>
         public static string Register {
@@ -152,11 +314,38 @@ namespace Lands.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Something was wrong, please try later..
         /// </summary>
         public static string SomethingWrong {
             get {
                 return ResourceManager.GetString("SomethingWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Subregion:.
+        /// </summary>
+        public static string Subregion {
+            get {
+                return ResourceManager.GetString("Subregion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Translations.
+        /// </summary>
+        public static string Translations {
+            get {
+                return ResourceManager.GetString("Translations", resourceCulture);
             }
         }
     }

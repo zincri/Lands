@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AlphaCode2" xml:space="preserve">
+    <value>Código Alfa 2:</value>
+  </data>
+  <data name="AlphaCode3" xml:space="preserve">
+    <value>Código Alfa 3:</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="Borders" xml:space="preserve">
+    <value>Fronteras</value>
+  </data>
+  <data name="Capital" xml:space="preserve">
+    <value>Capital:</value>
+  </data>
+  <data name="CIOC" xml:space="preserve">
+    <value>CIOC:</value>
+  </data>
+  <data name="Currencies" xml:space="preserve">
+    <value>Monedas</value>
+  </data>
+  <data name="Demonym" xml:space="preserve">
+    <value>Demonym:</value>
+  </data>
   <data name="EmailPlaceHolder" xml:space="preserve">
     <value>ejemplo@hotmail.com</value>
   </data>
@@ -129,8 +153,32 @@
   <data name="ForgotPassword" xml:space="preserve">
     <value>Olvidaste tu contraseña?</value>
   </data>
+  <data name="GINI" xml:space="preserve">
+    <value>GINI:</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="LandsTitle" xml:space="preserve">
+    <value>Países</value>
+  </data>
+  <data name="LandTitle" xml:space="preserve">
+    <value>País</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Entrar</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="MyLanguages" xml:space="preserve">
+    <value>Idiomas</value>
+  </data>
+  <data name="NativeName" xml:space="preserve">
+    <value>Nombre nativo:</value>
+  </data>
+  <data name="NumericCode" xml:space="preserve">
+    <value>Código numérico:</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>Aceptar</value>
@@ -141,13 +189,28 @@
   <data name="PasswordValidation" xml:space="preserve">
     <value>La contraseña es nula o vacia.</value>
   </data>
+  <data name="Population" xml:space="preserve">
+    <value>Población:</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Región:</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>
   <data name="Rememberme" xml:space="preserve">
     <value>Recordar</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
   <data name="SomethingWrong" xml:space="preserve">
-    <value>Algo ha salido mal,intenta mas tarde.</value>
+    <value>Algo ha salido mal, intenta mas tarde.</value>
+  </data>
+  <data name="Subregion" xml:space="preserve">
+    <value>Sub-región:</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Traducciones</value>
   </data>
 </root>
