@@ -175,7 +175,6 @@ namespace Lands.Helpers
             get { return Resource.MyLanguages; }
         }
         
-
         public static string Translations
         {
             get { return Resource.Translations; }
