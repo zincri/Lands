@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
-//using Domain;
 using Lands.Models;
 
 namespace Lands.Services

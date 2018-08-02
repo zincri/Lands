@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands", "Lands\Lands.csproj", "{A4554C34-DD94-4CBF-9AD3-B062A989ADBE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44DFFA33-A3CE-4144-8A9D-97A44A79DB86} = {44DFFA33-A3CE-4144-8A9D-97A44A79DB86}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.iOS", "iOS\Lands.iOS.csproj", "{D74C669A-3F23-483A-9575-0BCD08490DE5}"
 EndProject
@@ -11,8 +14,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.Domain", "Lands.Domain\Lands.Domain.csproj", "{44DFFA33-A3CE-4144-8A9D-97A44A79DB86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.Backend", "Lands.Backend\Lands.Backend.csproj", "{DAA7C955-8895-49A5-8BE9-34779922DC11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44DFFA33-A3CE-4144-8A9D-97A44A79DB86} = {44DFFA33-A3CE-4144-8A9D-97A44A79DB86}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.API", "Lands.API\Lands.API.csproj", "{7245D7AD-A187-4483-A5A6-B85BDB1C2873}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44DFFA33-A3CE-4144-8A9D-97A44A79DB86} = {44DFFA33-A3CE-4144-8A9D-97A44A79DB86}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
